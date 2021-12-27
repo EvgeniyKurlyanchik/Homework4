@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="BOTTOM_RIGHT" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.geekbrains.homework4.Controller">
+<!--    <stylesheets>-->
+<!--        <URL value="@/ru.geekbrains.homework4/css/style.css"/>-->
+<!--    </stylesheets>-->
+    <MenuBar>
+        <Menu text="File">
+            <MenuItem text="Open" />
+            <MenuItem text="Save" />
+            <MenuItem fx:id="close" onAction="#clickClose" text="Close" />
+        </Menu>
+    </MenuBar>
+    <TextArea fx:id="mainTextArea" VBox.vgrow="ALWAYS">
+      <padding>
+         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      </padding></TextArea>
+    <HBox alignment="TOP_CENTER">
+        <TextField fx:id="textField" alignment="CENTER" onAction="#clickBtnSendText" prefWidth="250" />
+        <Button onAction="#clickBtnSendText" text="Send text" />
+<Button fx:id="btn23" text="Закрыть" />
+      <padding>
+         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      </padding>
+    </HBox>
+
+</VBox>
